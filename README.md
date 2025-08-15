@@ -17,19 +17,14 @@ The pipeline processes a dataset of face images and outputs degraded variants in
 ---
 
 ## 🛠 Features
-- **Group A: Acquisition & Sensor Defects**
-  - White balance distortion
-  - Under/over exposure
-  - Vignetting
-  - Chromatic aberration
-- **Group B: Transmission & Compression Artifacts**
-  - Blockiness
-  - JPEG compression
-  - Packet loss simulation
-  - Color banding
-  - Gaussian blur
-- **Weighted severity** for realistic blending of multiple effects.
-- Works with datasets in `ImageFolder`-style structure.
+- Group A: Acquisition & Sensor Defects: (Incorrect White Balance, Under Exposure, Over Exposure, Vignetting, Chromatic Aberration) - These degradations simulate issues that arise at the point of capture due to camera hardware limitations or settings.
+
+- Group B: Transmission & Compression Artifacts: (Bitrate Starvation, Blockiness, Packet Loss, Color Banding) - This group focuses on visual artifacts introduced during the encoding, compression, and transmission of video data.
+
+- Group C: Blurring Effects: (Motion Blur, Gaussian Blur, Lens Blur) - These degradations simulate the loss of image sharpness and detail due to motion or optical limitations.
+
+- Group D: Noise Injection: (Gaussian Noise, Salt & Pepper Noise) - This group models random visual noise, often a result of low light conditions or sensor quality.
+
 
 ---
 
